@@ -11,14 +11,14 @@ import java.lang.annotation.Target;
 public @interface ApiInvokeRecord {
 
   /**
-   * 接口请求源头。例如  InvokeSourceEnum.MICRO_SERVICE_A
+   * 接口调用方。例如  InvokeSourceEnum.MICRO_SERVICE_A
    *
    * @see com.itbounds.dev.apiinvokelog.common.enums.InvokeSourceEnum
    */
   InvokeSourceEnum caller();
 
   /**
-   * 接口请求目的地。例如 InvokeSourceEnum.MICRO_SERVICE_B
+   * 接口提供方。例如 InvokeSourceEnum.MICRO_SERVICE_B
    *
    * @see com.itbounds.dev.apiinvokelog.common.enums.InvokeSourceEnum
    */
